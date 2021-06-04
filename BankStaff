@@ -1,0 +1,15 @@
+class BankStaff {
+
+    ArrayList<Customer> customers = new ArrayList<>();
+    private long employeeId;
+
+    public BankStaff() {
+        employeeId = Math.round(Math.random() * 100000000);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + "  BankStaff{ employeeId=" + employeeId + ",  customers=" + customers + '}';
+    }
+}
